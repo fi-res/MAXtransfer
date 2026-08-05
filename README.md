@@ -1,7 +1,7 @@
-# Sferum Transfer Bot
+# Max Transfer
 
 > [!CAUTION]
-> Может блокировать аккаунт [#10](https://github.com/Sharkow1743/SferumTransferBot/issues/10#issue-3961856910)
+> Может заблокировать аккаунт.
 
 Бот для пересылки сообщений из Max в Telegram.
 
@@ -18,7 +18,7 @@
 
 - [x] Отправлять сообщения в сферум по команде `/send <текст сообщения>`(все сообщения будут отправлятся от вашего лица)
     - [x] Текст
-    - [ ] Картинки
+    - [x] Картинки
     - [ ] Файлы
     - [ ] Видео
     - [ ] Пересылания
@@ -34,12 +34,12 @@
 Клонируйте репозиторий или нажмите вверху кнопку "Code", затем выберите "Download ZIP". Распакуйте скачанный файл.
 
 ### 3. Скаичвание зависимостей:
-Установите необходимые библиотеки:
+Установите необходимые библиотеки:  
 Через `pip`:
 ```bash
 pip install -r requirements.txt
 ```
-Через `uv`:
+Или через `uv`:
 ```bash
 uv init
 uv sync
@@ -78,5 +78,7 @@ cp .env.example .env
 ```bash
 python main.py
 ```
-
-Или через docker: https://hub.docker.com/repository/docker/sharkow1743/sferumtransferbot/general
+Или через uv:
+```bash
+uv run main.py
+```
